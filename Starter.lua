@@ -341,13 +341,12 @@ local function ExecuteScript(isSafe)
     if isSafe then
         TriggerNotification(Theme.Safe.Light, "Executing Safe Script (Please Wait)...")
         task.spawn(pcall, function()
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/FuddyOG/MainOptimumRealScript/refs/heads/main/MainOptumumRealScript.lua"))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/API-AyGent/LoaderSafe/refs/heads/main/Loader.lua"))()
         end)
     else
         TriggerNotification(Theme.Unsafe.Light, "Executing Unsafe Script (Please Wait)...")
         task.spawn(pcall, function()
-            -- Placeholder configuration for Unsafe script endpoint
-            -- loadstring(game:HttpGet("UNSAFE_ENDPOINT_HERE"))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/API-AyGent/LoaderUnSafe/refs/heads/main/Loader.lua"))()
         end)
     end
 end
